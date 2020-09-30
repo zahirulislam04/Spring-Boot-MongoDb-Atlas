@@ -7,3 +7,5 @@
 - Maven
 - QueryDSL plugin
 - Postman (to test api)
+
+** Update application property file with your mongodb connection string **
