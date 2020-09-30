@@ -1,4 +1,4 @@
-# Search blog post from post collection of Mongodb Atlas
+# Search blog post from post collection of Mongodb Atlas database
 
 ## Following tools are used
 
