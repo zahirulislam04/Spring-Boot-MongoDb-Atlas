@@ -14,12 +14,8 @@ import com.project.mongodb.model.Post;
 @Repository
 public interface PostRepository extends MongoRepository<Post, String>, QuerydslPredicateExecutor<Post> {
 	Optional<Post> findById(String id);
-	Post findByTitle(String title);	
-	List<Post> findByTitleLike(String title);
+	Post findByTitle(String title);		
 	List<Post> findByLikesLessThan(int like);	
 	List<Post> findByViewsGreaterThan(int view);
-	List<Post> findByViewsBetween(int from, int to);
-	
-//	@Query("{'author.country': ?0}")
-//	List<Post> findByAuthorCountry(String country);
+	List<Post> findByViewsBetween(int from, int to);	
 }
